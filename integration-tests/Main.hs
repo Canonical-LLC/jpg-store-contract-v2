@@ -309,12 +309,12 @@ runTests config@Config{..} resources@AllResources
           , swapSpec seller1 policy2
           , swapSpec seller1 policy3
           , swapSpec seller1 policy4
-          , swapSpec seller2 policy1
+          -- , swapSpec seller2 policy1
           -- , swapSpec seller2 policy2
           -- , swapSpec seller2 policy3
           -- , swapSpec seller2 policy4
           ]) $ do
-          it "can be really purchased in bulk upto 3" $ \swaps -> do
+          it "can be really purchased in bulk upto 4" $ \swaps -> do
             evalAccepts config resources swaps 4_000_000 buyer
 
 main :: IO ()
